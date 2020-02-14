@@ -411,9 +411,8 @@ def main():
         trials = number of trials for computing the averages
         device = device we want to use for the computation
     """
-    file = 0
-    file = (1 << 4) - 1
     bit_n = 14
+    file = 0
     trials = 100
     device = provider.get_backend('ibmq_16_melbourne')
     quantum_experiment(file, bit_n, trials, device)
